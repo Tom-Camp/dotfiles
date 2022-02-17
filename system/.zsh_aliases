@@ -1,0 +1,6 @@
+alias dc="docker compose"
+alias gohome="cd $GOPATH/src/github.com/tom-camp/"
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+alias l="ls -la"
+alias h="ls -lah"
