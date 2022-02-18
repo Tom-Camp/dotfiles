@@ -10,7 +10,7 @@ set hlsearch
 set ruler
 set guifont=Menlo\ Regular:h16
 
-colorscheme evening 
+colors zenburn
 
 syntax on
 filetype plugin indent on
