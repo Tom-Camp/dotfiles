@@ -1,0 +1,46 @@
+[alias]
+	co = checkout
+	br = branch
+	s = status
+[use]
+	name = Tom Camp
+[user]
+	name = Tom Camp
+	mail = tom.camp@civicactions.com
+	email = tom.camp@civicactions.com
+[core]
+	excludesfile = /Users/civicactions/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+  template = /Users/civicactions/.stCommitMsg
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = red reverse
+	local = red
+	remote = green
+[color "diff"]
+	meta = red bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = blue
+	changed = red
+	untracked = green 
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[url "git@github.com:"]
+	insteadOf = https://github.com/
